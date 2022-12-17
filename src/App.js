@@ -142,7 +142,7 @@ function App() {
         >
           <AiOutlineArrowUp />
         </button>
-        <footer className="dark:text-white">@All rights reserved 2022</footer>
+        <footer className="dark:text-white">@All rights reserved 2023</footer>
       </div>
     </div>
   );
