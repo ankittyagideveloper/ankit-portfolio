@@ -143,7 +143,7 @@ function App() {
           </div>
         </section>
         <button
-          className={`fixed right-0 bottom-0 bg-teal-500 m-14 rounded-full p-3 text-white font-extrabold overflow-auto ${
+          className={`fixed right-0 bottom-0 bg-teal-500 md:m-14  m-8 rounded-full p-3 text-white font-extrabold overflow-auto ${
             show ? "block" : "hidden"
           }`}
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
