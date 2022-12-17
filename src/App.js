@@ -36,7 +36,7 @@ function App() {
   };
   return (
     <div className={darkMode ? "dark" : ""}>
-      <div className="App bg-white min-h-screen md:px-10 dark:bg-gray-900">
+      <div className="App bg-white min-h-screen px-10 dark:bg-gray-900">
         <section>
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons dark:text-white">
@@ -61,7 +61,7 @@ function App() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10 ">
+          <div className="text-center">
             <h2 className="text-5xl py-2 text-teal-600 font-medium ">
               Ankit Tyagi
             </h2>
