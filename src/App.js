@@ -72,15 +72,15 @@ function App() {
               worked with various types of projects and have mastered multiple
               javascript frameworks.
             </p>
-            <div className="text-5xl flex gap-16 py-3 text-gray-600 justify-center text-center m-2">
+            <div className="text-5xl flex gap-8 md:gap-16 py-3 text-gray-600 justify-center text-center m-2">
               <AiOutlineGithub
-                className="cursor-pointer dark:text-white"
+                className=" cursor-pointer dark:text-white"
                 onClick={() =>
                   window.open("https://github.com/ankittyagi206", "_blank")
                 }
               />
               <AiFillLinkedin
-                className="cursor-pointer dark:text-white"
+                className="  cursor-pointer dark:text-white"
                 onClick={() =>
                   window.open(
                     "https://www.linkedin.com/in/thereactdeveloper",
@@ -89,7 +89,7 @@ function App() {
                 }
               />
               <AiFillTwitterCircle
-                className="cursor-pointer dark:text-white"
+                className=" cursor-pointer dark:text-white"
                 onClick={() =>
                   window.open("https://twitter.com/AnkitTy54645879", "_blank")
                 }
