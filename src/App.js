@@ -7,7 +7,7 @@ import {
   AiOutlineArrowUp,
   AiOutlineGithub,
 } from "react-icons/ai";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -31,7 +31,9 @@ function App() {
       <div className="App bg-white min-h-screen px-10 dark:bg-gray-900">
         <section>
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons dark:text-white">Ankit Tyagi</h1>
+            <h1 className="text-xl font-burtons dark:text-white">
+              Ankit Tyagi
+            </h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -95,7 +97,9 @@ function App() {
           </div>
         </section>
         <section>
-          <h3 className="text-3xl py-1 text-left dark:text-white">Technologies I know</h3>
+          <h3 className="text-3xl py-1 text-left dark:text-white">
+            Technologies I know
+          </h3>
           <p className="text-md py-2 leading-8 text-gray-800 text-left dark:text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,{" "}
             <span className="text-teal-500">aliquid!</span>
