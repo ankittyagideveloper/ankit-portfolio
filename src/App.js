@@ -10,8 +10,12 @@ import {
 import { useState } from "react";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
+  function getScreenMode() {
+    const darkMode = JSON.parse(localStorage.getItem("darkMode"));
+    return darkMode;
+  }
+  const [darkMode, setDarkMode] = useState(getScreenMode() ?? false);
+  getScreenMode();
   const [show, setShow] = useState(false);
   window.onscroll = function () {
     scrollFunction();
@@ -26,6 +30,10 @@ function App() {
       setShow(false);
     }
   }
+  const handleDarkMode = () => {
+    setDarkMode(!darkMode);
+    localStorage.setItem("darkMode", !darkMode);
+  };
   return (
     <div className={darkMode ? "dark" : ""}>
       <div className="App bg-white min-h-screen px-10 dark:bg-gray-900">
@@ -37,7 +45,7 @@ function App() {
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
+                  onClick={() => handleDarkMode()}
                   className="text-2xl cursor-pointer dark:text-white"
                 />
               </li>
