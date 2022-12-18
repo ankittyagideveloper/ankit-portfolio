@@ -67,7 +67,7 @@ function App() {
             </h2>
             <div className="text-center flex items-center justify-center">
               <h3 className="w-[0ch] overflow-hidden whitespace-nowrap text-2xl py-3 dark:border-white dark:text-white animate-typing leading-3  border-r-2 border-black">
-                I'm a Web Developer
+                I'm a <span className="text-teal-500">Web Developer.</span>
               </h3>
             </div>
 
