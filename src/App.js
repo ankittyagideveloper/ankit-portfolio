@@ -65,7 +65,12 @@ function App() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium ">
               Ankit Tyagi
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white">Web Developer</h3>
+            <div className="text-center flex items-center justify-center">
+              <h3 className="w-[0ch] overflow-hidden whitespace-nowrap text-2xl py-3 dark:border-white dark:text-white animate-typing leading-3  border-r-2 border-black">
+                I'm a Web Developer
+              </h3>
+            </div>
+
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-white">
               Extremely motivated to constantly develop my skill and grow
               professionally. I am a passionate front end developer who has
