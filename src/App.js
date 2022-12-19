@@ -7,6 +7,7 @@ import {
   AiOutlineArrowUp,
   AiOutlineGithub,
 } from "react-icons/ai";
+import { GrSun } from "react-icons/gr";
 import { useState } from "react";
 
 function App() {
@@ -44,10 +45,17 @@ function App() {
             </h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill
-                  onClick={() => handleDarkMode()}
-                  className="text-2xl cursor-pointer dark:text-white"
-                />
+                {darkMode ? (
+                  <BsFillMoonStarsFill
+                    onClick={() => handleDarkMode()}
+                    className="text-2xl cursor-pointer dark:text-white"
+                  />
+                ) : (
+                  <GrSun
+                    onClick={() => handleDarkMode()}
+                    className="text-2xl cursor-pointer dark:text-white"
+                  />
+                )}
               </li>
               <li>
                 <a
